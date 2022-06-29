@@ -8,6 +8,8 @@ import javax.persistence.*;
 @Table(name = "dentists")
 @Getter
 @Setter
+@ToString
+@EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
 public class Dentist {
