@@ -1,7 +1,6 @@
 package com.digitalhouse.clinic.persistence.jparepository;
 
 import com.digitalhouse.clinic.persistence.entity.Dentist;
-import org.assertj.core.error.OptionalShouldContainInstanceOf;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,8 +13,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class DentistJPARepositoryTest {
+    private final DentistJPARepository repository;
+
     @Autowired
-    private DentistJPARepository repository;
+    DentistJPARepositoryTest(DentistJPARepository repository) {
+        this.repository = repository;
+    }
 
     @Test
     public void testCRUD(){
