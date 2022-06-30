@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 @Table(name = "patients")
 @Getter
 @Setter
+@ToString
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
