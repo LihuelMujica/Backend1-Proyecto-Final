@@ -1,10 +1,7 @@
 package com.digitalhouse.clinic.persistence.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -13,6 +10,8 @@ import java.time.LocalDateTime;
 @Table(name = "appointments")
 @Getter
 @Setter
+@ToString
+@EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor
 public class Appointment {
@@ -25,11 +24,11 @@ public class Appointment {
     @Column(name = "dentist_id")
     private Integer dentistId;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne//(fetch = FetchType.LAZY)
     @JoinColumn(name = "patient_id", insertable = false,updatable = false)
     @JsonIgnore
     private Patient patient;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne//(fetch = FetchType.LAZY)
     @JoinColumn(name = "dentist_id",insertable = false,updatable = false)
     @JsonIgnore
     private Dentist dentist;
