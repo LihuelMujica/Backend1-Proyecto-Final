@@ -52,8 +52,8 @@ class PatientJPARepositoryTest {
         //Busco cada uno por id y los guardo en una nueva lista
 
         List<Patient> patientsFoundbyId = new ArrayList<>();
-        patients.forEach(p -> patientsFoundbyId.add(repository.findById(p.getId()).get()));
-
+        patients.forEach(p -> repository.findById(p.getId())
+                .ifPresent(patientsFoundbyId::add));
         // Testeo que los patients coincidan con los patientsFoundById
 
         assertEquals(patients,patientsFoundbyId);

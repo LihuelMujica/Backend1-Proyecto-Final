@@ -73,7 +73,8 @@ class AppointmentJPARepositoryTest {
 
         List<Appointment> findByIdAppointments = new ArrayList<>();
 
-        appointments.forEach(a -> findByIdAppointments.add(repository.findById(a.getId()).get()));
+        appointments.forEach(a -> repository.findById(a.getId())
+                .ifPresent(findByIdAppointments::add));
 
         assertEquals(findByIdAppointments,appointments);
     }
