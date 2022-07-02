@@ -35,19 +35,19 @@ class AppointmentJPARepositoryTest {
         List<Patient> patients = new ArrayList<>();
         patients.add(
                 new Patient(null,"Jorge","Jimenez","123",
-                        LocalDateTime.now(),
+                        LocalDateTime.of(2020,4,4,1,20,5),
                         new Address(null,"Calle1","123","Paraná","Entre Ríos")
                 )
         );
         patients.add(
                 new Patient(null,"Roberto","Gomez","124",
-                        LocalDateTime.now(),
+                        LocalDateTime.of(2020,4,4,1,20,5),
                         new Address(null,"Calle2","456","Santa Fe","Santa Fe")
                 )
         );
         patients.add(
                 new Patient(null,"Jorge","Suarez","14",
-                        LocalDateTime.now(),
+                        LocalDateTime.of(2020,4,4,1,20,5),
                         new Address(null,"Calle4","789","Santa Fe","Rosario")
                 )
         );
