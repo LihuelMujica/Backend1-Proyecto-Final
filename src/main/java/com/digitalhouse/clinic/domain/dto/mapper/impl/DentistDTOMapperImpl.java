@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class DentistDTOMapperImpl implements DentistDTOMapper {
     private final ObjectMapper mapper;
 
-    public DentistDTOMapperImpl(ObjectMapper mapper) {
+    public DentistDTOMapperImpl() {
         this.mapper = new ObjectMapper();
         mapper.registerModule(new JavaTimeModule());
     }
