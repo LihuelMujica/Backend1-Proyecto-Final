@@ -22,19 +22,14 @@ public class DentistDTOMapperImpl implements DentistDTOMapper {
 
     @Override
     public DentistDTO toDTO(Dentist dentist) {
-        return mapper.convertValue(dentist, DentistDTO.class);    }
+        return mapper.convertValue(dentist, DentistDTO.class);
+    }
 
-    @Override
-    public List<DentistDTO> toDTO(List<Dentist> c) {
-        return c.stream().map(this::toDTO).collect(Collectors.toList());    }
 
     @Override
     public Dentist toEntity(DentistDTO dentistDTO) {
         return mapper.convertValue(dentistDTO, Dentist.class);
     }
 
-    @Override
-    public List<Dentist> toEntity(List<DentistDTO> d) {
-        return d.stream().map(this::toEntity).collect(Collectors.toList());
-    }
+
 }
