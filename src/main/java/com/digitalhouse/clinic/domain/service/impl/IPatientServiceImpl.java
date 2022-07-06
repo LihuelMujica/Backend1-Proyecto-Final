@@ -44,15 +44,13 @@ public class IPatientServiceImpl implements IPatientService {
 
     @Override
     public PatientDTO update(PatientDTO patient) throws ResourceNotFoundException {
-        if(repository.existsById(patient.getId())) throw new ResourceNotFoundException("Appointment not found");
+        if(repository.existsById(patient.getId())) throw new ResourceNotFoundException("Patient not found");
         return mapper.toDTO(repository.save(mapper.toEntity(patient)));
     }
 
     @Override
-    public boolean delete(int id) {
-        return repository.findById(id).map(patient -> {
-            repository.deleteById(id);
-            return true;
-        }).orElse(false);
+    public void delete(int id) throws ResourceNotFoundException {
+        repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Patient not found"));
+        repository.deleteById(id);
     }
 }

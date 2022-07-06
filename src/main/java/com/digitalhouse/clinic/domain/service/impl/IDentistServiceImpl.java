@@ -43,15 +43,13 @@ public class IDentistServiceImpl implements IDentistService {
 
     @Override
     public DentistDTO update(DentistDTO dentist) throws ResourceNotFoundException {
-        if(repository.existsById(dentist.getId())) throw new ResourceNotFoundException("Appointment not found");
+        if(repository.existsById(dentist.getId())) throw new ResourceNotFoundException("Dentist not found");
         return mapper.toDTO(repository.save(mapper.toEntity(dentist)));
     }
 
     @Override
-    public boolean delete(int id) {
-        return repository.findById(id).map(d -> {
-            repository.deleteById(id);
-            return true;
-        }).orElse(false);
+    public void delete(int id) throws ResourceNotFoundException {
+        repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Dentist not found"));
+        repository.deleteById(id);
     }
 }

@@ -49,10 +49,8 @@ public class IAppointmentServiceImpl implements IAppointmentService {
     }
 
     @Override
-    public boolean delete(int id) {
-        return repository.findById(id).map(d -> {
-            repository.deleteById(id);
-            return true;
-        }).orElse(false);
+    public void delete(int id) throws ResourceNotFoundException {
+        repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Appointment not found"));
+        repository.deleteById(id);
     }
 }
