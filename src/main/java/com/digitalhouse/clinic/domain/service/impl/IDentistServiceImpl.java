@@ -43,7 +43,7 @@ public class IDentistServiceImpl implements IDentistService {
 
     @Override
     public DentistDTO update(DentistDTO dentist) throws ResourceNotFoundException {
-        if(repository.existsById(dentist.getId())) throw new ResourceNotFoundException("Dentist not found");
+        if(!repository.existsById(dentist.getId())) throw new ResourceNotFoundException("Dentist not found");
         return mapper.toDTO(repository.save(mapper.toEntity(dentist)));
     }
 

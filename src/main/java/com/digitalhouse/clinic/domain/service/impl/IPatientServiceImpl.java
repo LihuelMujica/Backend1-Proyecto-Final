@@ -44,7 +44,7 @@ public class IPatientServiceImpl implements IPatientService {
 
     @Override
     public PatientDTO update(PatientDTO patient) throws ResourceNotFoundException {
-        if(repository.existsById(patient.getId())) throw new ResourceNotFoundException("Patient not found");
+        if(!repository.existsById(patient.getId())) throw new ResourceNotFoundException("Patient not found");
         return mapper.toDTO(repository.save(mapper.toEntity(patient)));
     }
 

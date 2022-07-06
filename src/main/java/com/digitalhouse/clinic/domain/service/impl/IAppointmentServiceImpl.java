@@ -44,7 +44,7 @@ public class IAppointmentServiceImpl implements IAppointmentService {
 
     @Override
     public AppointmentDTO update(AppointmentDTO appointment) throws ResourceNotFoundException {
-        if(repository.existsById(appointment.getId())) throw new ResourceNotFoundException("Appointment not found");
+        if(!repository.existsById(appointment.getId())) throw new ResourceNotFoundException("Appointment not found");
         return mapper.toDTO(repository.save(mapper.toEntity(appointment)));
     }
 
