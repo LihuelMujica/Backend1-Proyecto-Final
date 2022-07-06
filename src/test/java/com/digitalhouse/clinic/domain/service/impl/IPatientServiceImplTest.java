@@ -1,6 +1,7 @@
 package com.digitalhouse.clinic.domain.service.impl;
 
 import com.digitalhouse.clinic.domain.dto.PatientDTO;
+import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import com.digitalhouse.clinic.persistence.entity.Address;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -25,16 +26,16 @@ class IPatientServiceImplTest {
 
     @ParameterizedTest
     @MethodSource("provideParameters")
-    void crudTest(PatientDTO dto){
+    void crudTest(PatientDTO dto) throws ResourceNotFoundException {
         //Save and find by id
         dto = service.create(dto);
         int id = dto.getId();
-        Optional<PatientDTO> foundById = service.getById(id);
-        assertEquals(Optional.of(dto),foundById);
+        PatientDTO foundById = service.getById(id);
+        assertEquals(dto,foundById);
 
         //Delete
         assertTrue(service.delete(id));
-        assertEquals(service.getById(id),Optional.empty());
+        assertThrows(ResourceNotFoundException.class, () -> service.getById(id));
     }
 
     private static Stream<Arguments> provideParameters(){
