@@ -5,10 +5,12 @@ import com.digitalhouse.clinic.domain.dto.mapper.PatientDTOMapper;
 import com.digitalhouse.clinic.domain.service.IPatientService;
 import com.digitalhouse.clinic.persistence.jparepository.PatientJPARepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class IPatientServiceImpl implements IPatientService {
     private final PatientJPARepository repository;
     private final PatientDTOMapper mapper;
