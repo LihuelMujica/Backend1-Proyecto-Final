@@ -38,10 +38,10 @@ class IAppointmentServiceImplTest {
     @MethodSource("provideParameters")
     void crudTest(PatientDTO patientDTO,DentistDTO dentistDTO){
         //Save patient and dentist
-        patientDTO = patientService.save(patientDTO);
-        dentistDTO = dentistService.save(dentistDTO);
+        patientDTO = patientService.create(patientDTO);
+        dentistDTO = dentistService.create(dentistDTO);
         //Save appointment
-        AppointmentDTO appointmentDTO = service.save(
+        AppointmentDTO appointmentDTO = service.create(
                 new AppointmentDTO(null,
                         patientDTO.getId(),
                         dentistDTO.getId(),
@@ -59,7 +59,7 @@ class IAppointmentServiceImplTest {
         assertEquals(Optional.of(appointmentDTO),foundById);
 
         //Delete
-        service.delete(id);
+        assertTrue(service.delete(id));
         assertEquals(Optional.empty(),service.getById(id));
 
 

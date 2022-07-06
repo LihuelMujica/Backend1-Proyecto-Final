@@ -8,6 +8,7 @@ import java.util.Optional;
 public interface IPatientService {
     List<PatientDTO> getAll();
     Optional<PatientDTO> getById(int id);
-    PatientDTO save(PatientDTO patient);
+    PatientDTO create(PatientDTO patient);
+    PatientDTO update(PatientDTO patient);
     boolean delete(int id);
 }

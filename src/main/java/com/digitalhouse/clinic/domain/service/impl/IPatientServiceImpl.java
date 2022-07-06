@@ -33,12 +33,17 @@ public class IPatientServiceImpl implements IPatientService {
     }
 
     @Override
-    public PatientDTO save(PatientDTO patient) {
+    public PatientDTO create(PatientDTO patient) {
         return mapper.toDTO(
                 repository.save(
                         mapper.toEntity(patient)
                 )
         );
+    }
+
+    @Override
+    public PatientDTO update(PatientDTO patient) {
+        return null;
     }
 
     @Override

@@ -27,13 +27,13 @@ class IDentistServiceImplTest {
     @MethodSource("provideParameters")
     void crudTest(DentistDTO dto){
         //Save and find by id
-        dto = service.save(dto);
+        dto = service.create(dto);
         int id = dto.getId();
         Optional<DentistDTO> foundById = service.getById(id);
         assertEquals(Optional.of(dto),foundById);
 
         //Delete
-        service.delete(id);
+        assertTrue(service.delete(id));
         assertEquals(service.getById(id),Optional.empty());
     }
 

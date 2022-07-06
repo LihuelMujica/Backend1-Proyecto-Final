@@ -1,8 +1,6 @@
 package com.digitalhouse.clinic.domain.service.impl;
 
-import com.digitalhouse.clinic.domain.dto.DentistDTO;
 import com.digitalhouse.clinic.domain.dto.PatientDTO;
-import com.digitalhouse.clinic.domain.service.IDentistService;
 import com.digitalhouse.clinic.persistence.entity.Address;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -29,13 +27,13 @@ class IPatientServiceImplTest {
     @MethodSource("provideParameters")
     void crudTest(PatientDTO dto){
         //Save and find by id
-        dto = service.save(dto);
+        dto = service.create(dto);
         int id = dto.getId();
         Optional<PatientDTO> foundById = service.getById(id);
         assertEquals(Optional.of(dto),foundById);
 
         //Delete
-        service.delete(id);
+        assertTrue(service.delete(id));
         assertEquals(service.getById(id),Optional.empty());
     }
 

@@ -8,6 +8,7 @@ import java.util.Optional;
 public interface IDentistService {
     List<DentistDTO> getAll();
     Optional<DentistDTO> getById(int id);
-    DentistDTO save(DentistDTO dentist);
+    DentistDTO create(DentistDTO dentist);
+    DentistDTO update(DentistDTO dentist);
     boolean delete(int id);
 }

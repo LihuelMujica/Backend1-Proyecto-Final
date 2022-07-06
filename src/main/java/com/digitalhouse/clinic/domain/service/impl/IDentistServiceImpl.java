@@ -33,12 +33,17 @@ public class IDentistServiceImpl implements IDentistService {
     }
 
     @Override
-    public DentistDTO save(DentistDTO dentist) {
+    public DentistDTO create(DentistDTO dentist) {
         return mapper.toDTO(
                 repository.save(
                         mapper.toEntity(dentist)
                 )
         );
+    }
+
+    @Override
+    public DentistDTO update(DentistDTO dentist) {
+        return null;
     }
 
     @Override

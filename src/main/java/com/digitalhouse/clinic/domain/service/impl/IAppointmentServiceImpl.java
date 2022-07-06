@@ -32,12 +32,17 @@ public class IAppointmentServiceImpl implements IAppointmentService {
     }
 
     @Override
-    public AppointmentDTO save(AppointmentDTO appointment) {
+    public AppointmentDTO create(AppointmentDTO appointment) {
         return mapper.toDTO(
                 repository.save(
                         mapper.toEntity(appointment)
                 )
         );
+    }
+
+    @Override
+    public AppointmentDTO update(AppointmentDTO appointment) {
+        return null;
     }
 
     @Override

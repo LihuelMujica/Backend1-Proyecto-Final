@@ -8,6 +8,7 @@ import java.util.Optional;
 public interface IAppointmentService {
     List<AppointmentDTO> getAll();
     Optional<AppointmentDTO> getById(int id);
-    AppointmentDTO save(AppointmentDTO appointment);
+    AppointmentDTO create(AppointmentDTO appointment);
+    AppointmentDTO update(AppointmentDTO appointment);
     boolean delete(int id);
 }
