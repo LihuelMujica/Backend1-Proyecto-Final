@@ -6,6 +6,7 @@ import com.digitalhouse.clinic.domain.dto.PatientDTO;
 import com.digitalhouse.clinic.domain.service.IAppointmentService;
 import com.digitalhouse.clinic.domain.service.IDentistService;
 import com.digitalhouse.clinic.domain.service.IPatientService;
+import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import com.digitalhouse.clinic.persistence.entity.Address;
 import com.digitalhouse.clinic.util.Utils;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -36,7 +37,7 @@ class IAppointmentServiceImplTest {
 
     @ParameterizedTest
     @MethodSource("provideParameters")
-    void crudTest(PatientDTO patientDTO,DentistDTO dentistDTO){
+    void crudTest(PatientDTO patientDTO,DentistDTO dentistDTO) throws ResourceNotFoundException {
         //Save patient and dentist
         patientDTO = patientService.create(patientDTO);
         dentistDTO = dentistService.create(dentistDTO);
@@ -54,13 +55,13 @@ class IAppointmentServiceImplTest {
         int id = appointmentDTO.getId();
 
         //GetById
-        Optional<AppointmentDTO> foundById = service.getById(id);
+        AppointmentDTO foundById = service.getById(id);
 
-        assertEquals(Optional.of(appointmentDTO),foundById);
+        assertEquals(appointmentDTO,foundById);
 
         //Delete
         assertTrue(service.delete(id));
-        assertEquals(Optional.empty(),service.getById(id));
+        assertThrows(ResourceNotFoundException.class,() -> service.getById(id));
 
 
     }
