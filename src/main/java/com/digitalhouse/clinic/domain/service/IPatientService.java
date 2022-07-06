@@ -10,6 +10,6 @@ public interface IPatientService {
     List<PatientDTO> getAll();
     PatientDTO getById(int id) throws ResourceNotFoundException;
     PatientDTO create(PatientDTO patient);
-    PatientDTO update(PatientDTO patient);
+    PatientDTO update(PatientDTO patient) throws ResourceNotFoundException;
     boolean delete(int id);
 }

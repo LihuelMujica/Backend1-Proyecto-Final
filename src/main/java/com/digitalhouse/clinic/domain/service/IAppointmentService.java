@@ -10,6 +10,6 @@ public interface IAppointmentService {
     List<AppointmentDTO> getAll();
     AppointmentDTO getById(int id) throws ResourceNotFoundException;
     AppointmentDTO create(AppointmentDTO appointment);
-    AppointmentDTO update(AppointmentDTO appointment);
+    AppointmentDTO update(AppointmentDTO appointment) throws ResourceNotFoundException;
     boolean delete(int id);
 }

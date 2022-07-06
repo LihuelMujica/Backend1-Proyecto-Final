@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class IDentistServiceImpl implements IDentistService {
@@ -43,8 +42,9 @@ public class IDentistServiceImpl implements IDentistService {
     }
 
     @Override
-    public DentistDTO update(DentistDTO dentist) {
-        return null;
+    public DentistDTO update(DentistDTO dentist) throws ResourceNotFoundException {
+        if(repository.existsById(dentist.getId())) throw new ResourceNotFoundException("Appointment not found");
+        return mapper.toDTO(repository.save(mapper.toEntity(dentist)));
     }
 
     @Override

@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class IAppointmentServiceImpl implements IAppointmentService {
@@ -30,7 +29,8 @@ public class IAppointmentServiceImpl implements IAppointmentService {
     @Override
     public AppointmentDTO getById(int id) throws ResourceNotFoundException {
 
-        return repository.findById(id).map(mapper::toDTO).orElseThrow(()-> new ResourceNotFoundException("Appointment not found"));
+        return repository.findById(id).map(mapper::toDTO)
+                .orElseThrow(()-> new ResourceNotFoundException("Appointment not found"));
     }
 
     @Override
@@ -43,8 +43,9 @@ public class IAppointmentServiceImpl implements IAppointmentService {
     }
 
     @Override
-    public AppointmentDTO update(AppointmentDTO appointment) {
-        return null;
+    public AppointmentDTO update(AppointmentDTO appointment) throws ResourceNotFoundException {
+        if(repository.existsById(appointment.getId())) throw new ResourceNotFoundException("Appointment not found");
+        return mapper.toDTO(repository.save(mapper.toEntity(appointment)));
     }
 
     @Override

@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class IPatientServiceImpl implements IPatientService {
@@ -44,8 +43,9 @@ public class IPatientServiceImpl implements IPatientService {
     }
 
     @Override
-    public PatientDTO update(PatientDTO patient) {
-        return null;
+    public PatientDTO update(PatientDTO patient) throws ResourceNotFoundException {
+        if(repository.existsById(patient.getId())) throw new ResourceNotFoundException("Appointment not found");
+        return mapper.toDTO(repository.save(mapper.toEntity(patient)));
     }
 
     @Override

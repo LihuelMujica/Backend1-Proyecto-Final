@@ -10,6 +10,6 @@ public interface IDentistService {
     List<DentistDTO> getAll();
     DentistDTO getById(int id) throws ResourceNotFoundException;
     DentistDTO create(DentistDTO dentist);
-    DentistDTO update(DentistDTO dentist);
+    DentistDTO update(DentistDTO dentist) throws ResourceNotFoundException;
     boolean delete(int id);
 }
