@@ -3,6 +3,7 @@ package com.digitalhouse.clinic.domain.service.impl;
 import com.digitalhouse.clinic.domain.dto.AppointmentDTO;
 import com.digitalhouse.clinic.domain.dto.mapper.AppointmentDTOMapper;
 import com.digitalhouse.clinic.domain.service.IAppointmentService;
+import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import com.digitalhouse.clinic.persistence.jparepository.AppointmentJPARepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,8 +28,9 @@ public class IAppointmentServiceImpl implements IAppointmentService {
     }
 
     @Override
-    public Optional<AppointmentDTO> getById(int id) {
-        return repository.findById(id).map(mapper::toDTO);
+    public AppointmentDTO getById(int id) throws ResourceNotFoundException {
+
+        return repository.findById(id).map(mapper::toDTO).orElseThrow(()-> new ResourceNotFoundException("Appointment not found"));
     }
 
     @Override
