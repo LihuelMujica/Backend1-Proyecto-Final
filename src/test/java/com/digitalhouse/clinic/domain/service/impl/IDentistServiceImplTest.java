@@ -33,7 +33,6 @@ class IDentistServiceImplTest {
         assertEquals(dto,foundById);
 
         //Delete
-        assertTrue(service.delete(id));
         assertThrows(ResourceNotFoundException.class,() -> service.getById(id));
     }
 

@@ -60,7 +60,6 @@ class IAppointmentServiceImplTest {
         assertEquals(appointmentDTO,foundById);
 
         //Delete
-        assertTrue(service.delete(id));
         assertThrows(ResourceNotFoundException.class,() -> service.getById(id));
 
 
