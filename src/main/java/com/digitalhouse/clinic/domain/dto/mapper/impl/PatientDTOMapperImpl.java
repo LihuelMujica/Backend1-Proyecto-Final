@@ -5,7 +5,9 @@ import com.digitalhouse.clinic.domain.dto.mapper.PatientDTOMapper;
 import com.digitalhouse.clinic.persistence.entity.Patient;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PatientDTOMapperImpl implements PatientDTOMapper {
     private final ObjectMapper mapper;
 
