@@ -9,7 +9,9 @@ import com.digitalhouse.clinic.persistence.entity.Dentist;
 import com.digitalhouse.clinic.persistence.entity.Patient;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AppointmentDTOMapperImpl implements AppointmentDTOMapper {
     private final ObjectMapper mapper;
 
