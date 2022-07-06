@@ -19,9 +19,9 @@ public class Dentist {
     private Integer id;
 
     @Column(name = "name")
-    private String nombre;
+    private String name;
     @Column(name = "lastName")
-    private String apellido;
+    private String lastname;
     @Column(name = "license")
     private String license;
 }

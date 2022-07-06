@@ -12,8 +12,8 @@ import lombok.*;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class DentistDTO {
     private Integer id;
-    private String nombre;
-    private String apellido;
+    private String name;
+    private String lastname;
     private String license;
 
 }
