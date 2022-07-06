@@ -2,13 +2,13 @@ package com.digitalhouse.clinic.domain.service.impl;
 
 import com.digitalhouse.clinic.domain.dto.DentistDTO;
 import com.digitalhouse.clinic.domain.service.IDentistService;
+import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.Optional;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -25,16 +25,16 @@ class IDentistServiceImplTest {
 
     @ParameterizedTest
     @MethodSource("provideParameters")
-    void crudTest(DentistDTO dto){
+    void crudTest(DentistDTO dto) throws ResourceNotFoundException {
         //Save and find by id
         dto = service.create(dto);
         int id = dto.getId();
-        Optional<DentistDTO> foundById = service.getById(id);
-        assertEquals(Optional.of(dto),foundById);
+        DentistDTO foundById = service.getById(id);
+        assertEquals(dto,foundById);
 
         //Delete
         assertTrue(service.delete(id));
-        assertEquals(service.getById(id),Optional.empty());
+        assertThrows(ResourceNotFoundException.class,() -> service.getById(id));
     }
 
     private static Stream<Arguments> provideParameters(){
