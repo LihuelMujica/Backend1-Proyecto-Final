@@ -25,11 +25,11 @@ public class Appointment {
     private Integer dentistId;
 
     @ManyToOne//(fetch = FetchType.LAZY)
-    @JoinColumn(name = "patient_id")
+    @JoinColumn(name = "patient_id",insertable = false,updatable = false)
     @JsonIgnore
     private Patient patient;
     @ManyToOne//(fetch = FetchType.LAZY)
-    @JoinColumn(name = "dentist_id")
+    @JoinColumn(name = "dentist_id",insertable = false,updatable = false)
     @JsonIgnore
     private Dentist dentist;
     private LocalDateTime date;
