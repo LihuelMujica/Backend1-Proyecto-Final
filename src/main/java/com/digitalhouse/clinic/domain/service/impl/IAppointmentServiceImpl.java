@@ -5,10 +5,12 @@ import com.digitalhouse.clinic.domain.dto.mapper.AppointmentDTOMapper;
 import com.digitalhouse.clinic.domain.service.IAppointmentService;
 import com.digitalhouse.clinic.persistence.jparepository.AppointmentJPARepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class IAppointmentServiceImpl implements IAppointmentService {
     private final AppointmentJPARepository repository;
     private final AppointmentDTOMapper mapper;
