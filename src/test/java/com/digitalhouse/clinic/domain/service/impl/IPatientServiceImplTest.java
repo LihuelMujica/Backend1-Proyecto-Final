@@ -1,5 +1,6 @@
 package com.digitalhouse.clinic.domain.service.impl;
 
+import com.digitalhouse.clinic.domain.dto.DentistDTO;
 import com.digitalhouse.clinic.domain.dto.PatientDTO;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import com.digitalhouse.clinic.persistence.entity.Address;
@@ -33,7 +34,15 @@ class IPatientServiceImplTest {
         PatientDTO foundById = service.getById(id);
         assertEquals(dto,foundById);
 
+        dto.setLastName("Fernandez");
+        service.update(dto);
+        assertEquals(dto,service.getById(dto.getId()));
+        foundById.setId(-1);
+        assertThrows(ResourceNotFoundException.class,
+                () -> service.update(foundById));
+
         //Delete
+        service.delete(id);
         assertThrows(ResourceNotFoundException.class, () -> service.getById(id));
     }
 

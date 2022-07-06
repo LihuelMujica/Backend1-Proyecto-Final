@@ -59,7 +59,15 @@ class IAppointmentServiceImplTest {
 
         assertEquals(appointmentDTO,foundById);
 
+        //Update
+        appointmentDTO.setDate(LocalDateTime.of(2030,4,20,9,15));
+        service.update(appointmentDTO);
+        assertEquals(appointmentDTO,service.getById(appointmentDTO.getId()));
+        assertThrows(ResourceNotFoundException.class,
+                () -> service.update(new AppointmentDTO(-1,null,null,null,null,null)));
+
         //Delete
+        service.delete(id);
         assertThrows(ResourceNotFoundException.class,() -> service.getById(id));
 
 

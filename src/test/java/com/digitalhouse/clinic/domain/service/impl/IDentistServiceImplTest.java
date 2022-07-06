@@ -1,5 +1,6 @@
 package com.digitalhouse.clinic.domain.service.impl;
 
+import com.digitalhouse.clinic.domain.dto.AppointmentDTO;
 import com.digitalhouse.clinic.domain.dto.DentistDTO;
 import com.digitalhouse.clinic.domain.service.IDentistService;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
@@ -9,6 +10,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.time.LocalDateTime;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -32,7 +34,15 @@ class IDentistServiceImplTest {
         DentistDTO foundById = service.getById(id);
         assertEquals(dto,foundById);
 
+        //Update
+        dto.setLastname("Fernandez");
+        service.update(dto);
+        assertEquals(dto,service.getById(dto.getId()));
+        assertThrows(ResourceNotFoundException.class,
+                () -> service.update(new DentistDTO(-1,"Pepe","Jimenez","123")));
+
         //Delete
+        service.delete(id);
         assertThrows(ResourceNotFoundException.class,() -> service.getById(id));
     }
 
