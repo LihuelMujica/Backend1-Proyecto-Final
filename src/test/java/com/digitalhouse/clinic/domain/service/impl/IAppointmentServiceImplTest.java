@@ -6,6 +6,7 @@ import com.digitalhouse.clinic.domain.dto.PatientDTO;
 import com.digitalhouse.clinic.domain.service.IAppointmentService;
 import com.digitalhouse.clinic.domain.service.IDentistService;
 import com.digitalhouse.clinic.domain.service.IPatientService;
+import com.digitalhouse.clinic.exception.ResourceAlreadyExistsException;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import com.digitalhouse.clinic.persistence.entity.Address;
 import com.digitalhouse.clinic.util.Utils;
@@ -37,7 +38,7 @@ class IAppointmentServiceImplTest {
 
     @ParameterizedTest
     @MethodSource("provideParameters")
-    void crudTest(PatientDTO patientDTO,DentistDTO dentistDTO) throws ResourceNotFoundException {
+    void crudTest(PatientDTO patientDTO,DentistDTO dentistDTO) throws ResourceNotFoundException, ResourceAlreadyExistsException {
         //Save patient and dentist
         patientDTO = patientService.create(patientDTO);
         dentistDTO = dentistService.create(dentistDTO);
@@ -75,23 +76,23 @@ class IAppointmentServiceImplTest {
 
     private static Stream<Arguments> provideParameters(){
         List<PatientDTO> patientDTOs = Utils.getListOf(
-                new PatientDTO(null,"Jorge","Jimenez","123",
+                new PatientDTO(null,"Jorge","Jimenez","963",
                         LocalDateTime.of(2020,4,4,1,20,5),
                         new Address(null,"Calle1","123","Paraná","Entre Ríos")
                 ),
-                new PatientDTO(null,"Roberto","Gomez","124",
+                new PatientDTO(null,"Roberto","Gomez","5374123",
                         LocalDateTime.of(2020,4,4,1,20,5),
                         new Address(null,"Calle2","456","Santa Fe","Santa Fe")
                 ),
-                new PatientDTO(null,"Jorge","Suarez","14",
+                new PatientDTO(null,"Jorge","Suarez","783453453",
                         LocalDateTime.of(2020,4,4,1,20,5),
                         new Address(null,"Calle4","789","Santa Fe","Rosario"))
         );
 
         List<DentistDTO> dentistDTOS = Utils.getListOf(
-                new DentistDTO(null,"Pepe","Jimenez","123"),
-                new DentistDTO(null,"Francisco","Marsicano","456"),
-                new DentistDTO(null,"Horacio","Rodriguez","789")
+                new DentistDTO(null,"Pepe","Jimenez","8946531"),
+                new DentistDTO(null,"Francisco","Marsicano","98465163"),
+                new DentistDTO(null,"Horacio","Rodriguez","320651965")
         );
 
         return Stream.of(

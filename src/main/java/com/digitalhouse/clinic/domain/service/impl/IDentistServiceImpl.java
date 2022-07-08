@@ -3,6 +3,7 @@ package com.digitalhouse.clinic.domain.service.impl;
 import com.digitalhouse.clinic.domain.dto.DentistDTO;
 import com.digitalhouse.clinic.domain.dto.mapper.DentistDTOMapper;
 import com.digitalhouse.clinic.domain.service.IDentistService;
+import com.digitalhouse.clinic.exception.ResourceAlreadyExistsException;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import com.digitalhouse.clinic.persistence.entity.Dentist;
 import com.digitalhouse.clinic.persistence.jparepository.DentistJPARepository;
@@ -35,7 +36,8 @@ public class IDentistServiceImpl implements IDentistService {
     }
 
     @Override
-    public DentistDTO create(DentistDTO dentist) {
+    public DentistDTO create(DentistDTO dentist) throws ResourceAlreadyExistsException {
+        if(repository.findByLicense(dentist.getLicense()).isPresent()) throw new ResourceAlreadyExistsException("A dentist with this license already exists");
         dentist.setId(null);
         return mapper.toDTO(
                 repository.save(

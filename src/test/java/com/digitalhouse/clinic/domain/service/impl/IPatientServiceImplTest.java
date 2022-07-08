@@ -49,15 +49,15 @@ class IPatientServiceImplTest {
 
     private static Stream<Arguments> provideParameters(){
         return Stream.of(
-                Arguments.of(new PatientDTO(null,"Jorge","Jimenez","123",
+                Arguments.of(new PatientDTO(null,"Jorge","Jimenez","4236",
                         LocalDateTime.of(2020,4,4,1,20,5),
                         new Address(null,"Calle1","123","Paraná","Entre Ríos")
                 )),
-                Arguments.of(new PatientDTO(null,"Roberto","Gomez","124",
+                Arguments.of(new PatientDTO(null,"Roberto","Gomez","7863",
                         LocalDateTime.of(2020,4,4,1,20,5),
                         new Address(null,"Calle2","456","Santa Fe","Santa Fe")
                 )),
-                Arguments.of(new PatientDTO(null,"Jorge","Suarez","14",
+                Arguments.of(new PatientDTO(null,"Jorge","Suarez","378634",
                         LocalDateTime.of(2020,4,4,1,20,5),
                         new Address(null,"Calle4","789","Santa Fe","Rosario"))
                 ));

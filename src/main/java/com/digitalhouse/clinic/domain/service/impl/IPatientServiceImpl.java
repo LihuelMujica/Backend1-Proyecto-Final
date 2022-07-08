@@ -39,6 +39,7 @@ public class IPatientServiceImpl implements IPatientService {
     @Override
     public PatientDTO create(PatientDTO patient) throws ResourceAlreadyExistsException {
         if(repository.findByDni(patient.getDni()).isPresent()) throw  new ResourceAlreadyExistsException("A user with this dni already exists");
+        patient.setId(null);
         return mapper.toDTO(
                 repository.save(
                         mapper.toEntity(patient)
