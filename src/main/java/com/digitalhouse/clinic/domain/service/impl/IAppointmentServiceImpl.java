@@ -3,6 +3,7 @@ package com.digitalhouse.clinic.domain.service.impl;
 import com.digitalhouse.clinic.domain.dto.AppointmentDTO;
 import com.digitalhouse.clinic.domain.dto.mapper.AppointmentDTOMapper;
 import com.digitalhouse.clinic.domain.service.IAppointmentService;
+import com.digitalhouse.clinic.exception.ResourceAlreadyExistsException;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import com.digitalhouse.clinic.persistence.entity.Appointment;
 import com.digitalhouse.clinic.persistence.jparepository.AppointmentJPARepository;
@@ -35,7 +36,9 @@ public class IAppointmentServiceImpl implements IAppointmentService {
     }
 
     @Override
-    public AppointmentDTO create(AppointmentDTO appointment) {
+    public AppointmentDTO create(AppointmentDTO appointment) throws ResourceAlreadyExistsException {
+        if(repository.findByDentistIdAndDate(appointment.getDentistId(),appointment.getDate()).isPresent()) throw  new ResourceAlreadyExistsException("This appointment is already assigned");
+        appointment.setId(null);
         return mapper.toDTO(
                 repository.save(
                         mapper.toEntity(appointment)
