@@ -38,7 +38,7 @@ public class IPatientServiceImpl implements IPatientService {
 
     @Override
     public PatientDTO create(PatientDTO patient) throws ResourceAlreadyExistsException {
-        repository.findByDni(patient.getDni()).orElseThrow(() -> new ResourceAlreadyExistsException("A user with this dni already exists"));
+        if(repository.findByDni(patient.getDni()).isPresent()) throw  new ResourceAlreadyExistsException("A user with this dni already exists");
         return mapper.toDTO(
                 repository.save(
                         mapper.toEntity(patient)
@@ -72,5 +72,11 @@ public class IPatientServiceImpl implements IPatientService {
     public void delete(int id) throws ResourceNotFoundException {
         repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Patient not found"));
         repository.deleteById(id);
+    }
+
+    @Override
+    public PatientDTO getByDni(String dni) throws ResourceNotFoundException {
+        return mapper.toDTO(repository
+                .findByDni(dni).orElseThrow(() -> new ResourceNotFoundException("Patient not found")));
     }
 }
