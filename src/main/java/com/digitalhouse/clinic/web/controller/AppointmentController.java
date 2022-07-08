@@ -1,6 +1,7 @@
 package com.digitalhouse.clinic.web.controller;
 
 import com.digitalhouse.clinic.domain.dto.AppointmentDTO;
+import com.digitalhouse.clinic.domain.dto.PatientDTO;
 import com.digitalhouse.clinic.domain.service.IAppointmentService;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import io.swagger.annotations.ApiOperation;
@@ -46,6 +47,16 @@ public class AppointmentController {
     @ApiResponse(code = 201, message = "CREATED")
     public ResponseEntity<AppointmentDTO> save(@RequestBody AppointmentDTO appointment) {
         return new ResponseEntity<>(service.create(appointment), HttpStatus.CREATED);
+    }
+
+    @PatchMapping("/update")
+    @ApiOperation("Update an appointment")
+    @ApiResponses({
+            @ApiResponse(code = 200, message = "OK"),
+            @ApiResponse(code = 404, message = "appointment not found")
+    })
+    public ResponseEntity<AppointmentDTO> update(@RequestBody AppointmentDTO appointmentDTO) throws ResourceNotFoundException {
+        return new ResponseEntity<>(service.update(appointmentDTO),HttpStatus.OK);
     }
 
     @DeleteMapping("/delete/{id}")

@@ -48,6 +48,16 @@ public class PatientController {
         return new ResponseEntity<>(service.create(patient), HttpStatus.CREATED);
     }
 
+    @PatchMapping("/update")
+    @ApiOperation("Update a patient")
+    @ApiResponses({
+            @ApiResponse(code = 200, message = "OK"),
+            @ApiResponse(code = 404, message = "patient not found")
+    })
+    public ResponseEntity<PatientDTO> update(@RequestBody PatientDTO patientDTO) throws ResourceNotFoundException {
+        return new ResponseEntity<>(service.update(patientDTO),HttpStatus.OK);
+    }
+
     @DeleteMapping("/delete/{id}")
     @ApiOperation("Delete a patient using id")
     @ApiResponses({
