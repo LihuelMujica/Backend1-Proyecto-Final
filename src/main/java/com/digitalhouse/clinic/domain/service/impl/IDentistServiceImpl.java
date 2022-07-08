@@ -4,11 +4,13 @@ import com.digitalhouse.clinic.domain.dto.DentistDTO;
 import com.digitalhouse.clinic.domain.dto.mapper.DentistDTOMapper;
 import com.digitalhouse.clinic.domain.service.IDentistService;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
+import com.digitalhouse.clinic.persistence.entity.Dentist;
 import com.digitalhouse.clinic.persistence.jparepository.DentistJPARepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class IDentistServiceImpl implements IDentistService {
@@ -34,6 +36,7 @@ public class IDentistServiceImpl implements IDentistService {
 
     @Override
     public DentistDTO create(DentistDTO dentist) {
+        dentist.setId(null);
         return mapper.toDTO(
                 repository.save(
                         mapper.toEntity(dentist)
@@ -43,8 +46,12 @@ public class IDentistServiceImpl implements IDentistService {
 
     @Override
     public DentistDTO update(DentistDTO dentist) throws ResourceNotFoundException {
-        if(!repository.existsById(dentist.getId())) throw new ResourceNotFoundException("Dentist not found");
-        return mapper.toDTO(repository.save(mapper.toEntity(dentist)));
+        Dentist oldDentist = repository.findById(dentist.getId()).orElseThrow(() -> new ResourceNotFoundException("Dentist not found"));
+        Dentist newDentist = mapper.toEntity(dentist);
+        if(newDentist.getName()==null) newDentist.setName(oldDentist.getName());
+        if(newDentist.getLastname()==null) newDentist.setLastname(oldDentist.getLastname());
+        if(newDentist.getLicense()==null) newDentist.setLicense(oldDentist.getLicense());
+        return mapper.toDTO(repository.save(newDentist));
     }
 
     @Override

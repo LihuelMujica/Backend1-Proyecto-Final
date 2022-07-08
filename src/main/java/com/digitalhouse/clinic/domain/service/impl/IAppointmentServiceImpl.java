@@ -4,6 +4,7 @@ import com.digitalhouse.clinic.domain.dto.AppointmentDTO;
 import com.digitalhouse.clinic.domain.dto.mapper.AppointmentDTOMapper;
 import com.digitalhouse.clinic.domain.service.IAppointmentService;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
+import com.digitalhouse.clinic.persistence.entity.Appointment;
 import com.digitalhouse.clinic.persistence.jparepository.AppointmentJPARepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -44,8 +45,12 @@ public class IAppointmentServiceImpl implements IAppointmentService {
 
     @Override
     public AppointmentDTO update(AppointmentDTO appointment) throws ResourceNotFoundException {
-        if(!repository.existsById(appointment.getId())) throw new ResourceNotFoundException("Appointment not found");
-        return mapper.toDTO(repository.save(mapper.toEntity(appointment)));
+        Appointment oldAppointment = repository.findById(appointment.getId()).orElseThrow(() -> new ResourceNotFoundException("Appointment not found"));
+        Appointment newAppointment = mapper.toEntity(appointment);
+        if(newAppointment.getPatientId()==null) newAppointment.setPatientId(oldAppointment.getPatientId());
+        if(newAppointment.getDentistId()==null) newAppointment.setDentistId(oldAppointment.getDentistId());
+        if(newAppointment.getDate()==null) newAppointment.setDate(oldAppointment.getDate());
+        return mapper.toDTO(repository.save(newAppointment));
     }
 
     @Override
