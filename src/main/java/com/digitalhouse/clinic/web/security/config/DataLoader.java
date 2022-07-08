@@ -19,18 +19,13 @@ public class DataLoader implements ApplicationRunner {
         this.userRepository = userRepository;
     }
 
-    @Override
-    public void run(ApplicationArguments args) throws Exception {
+    public void run(ApplicationArguments args) {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        String password = passwordEncoder.encode("password");
-        String password2 = passwordEncoder.encode("password2)");
-
-        userRepository.save(
-                new AppUser("Charly","charly","charly@digital.com",password, AppUserRole.ADMIN)
-        );
-        userRepository.save(
-                new AppUser("Charly2","charly2","charly2@digital.com",password2, AppUserRole.USER)
-        );
-
+        String adminPassword = passwordEncoder.encode("admin");
+        String userPassword = passwordEncoder.encode("user");
+        userRepository.save(new AppUser("User", "user", "user@digital.com",
+                userPassword, AppUserRole.USER));
+        userRepository.save(new AppUser("Admin", "admin", "admin@digital.com",
+                adminPassword, AppUserRole.ADMIN));
     }
 }
