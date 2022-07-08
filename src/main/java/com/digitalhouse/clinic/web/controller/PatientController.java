@@ -42,6 +42,16 @@ public class PatientController {
         return new ResponseEntity<>(service.getById(id),HttpStatus.OK);
     }
 
+    @GetMapping("/dni/{dni}")
+    @ApiOperation("Search for a patient using dni")
+    @ApiResponses({
+            @ApiResponse(code = 200, message = "OK"),
+            @ApiResponse(code = 404, message = "patient not found")
+    })
+    public ResponseEntity<PatientDTO> getByDni(String dni) throws ResourceNotFoundException {
+        return new ResponseEntity<>(service.getByDni(dni), HttpStatus.OK);
+    }
+
     @PostMapping("/create")
     @ApiOperation("Create a patient")
     @ApiResponse(code = 201, message = "CREATED")
