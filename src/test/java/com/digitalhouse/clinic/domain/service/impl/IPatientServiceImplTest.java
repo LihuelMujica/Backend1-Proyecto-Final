@@ -2,6 +2,7 @@ package com.digitalhouse.clinic.domain.service.impl;
 
 import com.digitalhouse.clinic.domain.dto.DentistDTO;
 import com.digitalhouse.clinic.domain.dto.PatientDTO;
+import com.digitalhouse.clinic.exception.ResourceAlreadyExistsException;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import com.digitalhouse.clinic.persistence.entity.Address;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -27,7 +28,7 @@ class IPatientServiceImplTest {
 
     @ParameterizedTest
     @MethodSource("provideParameters")
-    void crudTest(PatientDTO dto) throws ResourceNotFoundException {
+    void crudTest(PatientDTO dto) throws ResourceNotFoundException, ResourceAlreadyExistsException {
         //Save and find by id
         dto = service.create(dto);
         int id = dto.getId();
