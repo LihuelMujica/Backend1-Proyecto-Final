@@ -2,6 +2,7 @@ package com.digitalhouse.clinic.web.controller;
 
 import com.digitalhouse.clinic.domain.dto.PatientDTO;
 import com.digitalhouse.clinic.domain.service.IPatientService;
+import com.digitalhouse.clinic.exception.ResourceAlreadyExistsException;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -44,7 +45,7 @@ public class PatientController {
     @PostMapping("/create")
     @ApiOperation("Create a patient")
     @ApiResponse(code = 201, message = "CREATED")
-    public ResponseEntity<PatientDTO> create(@RequestBody PatientDTO patient) {
+    public ResponseEntity<PatientDTO> create(@RequestBody PatientDTO patient) throws ResourceAlreadyExistsException {
         return new ResponseEntity<>(service.create(patient), HttpStatus.CREATED);
     }
 

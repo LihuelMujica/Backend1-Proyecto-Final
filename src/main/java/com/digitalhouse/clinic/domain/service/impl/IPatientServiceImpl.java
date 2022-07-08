@@ -3,6 +3,7 @@ package com.digitalhouse.clinic.domain.service.impl;
 import com.digitalhouse.clinic.domain.dto.PatientDTO;
 import com.digitalhouse.clinic.domain.dto.mapper.PatientDTOMapper;
 import com.digitalhouse.clinic.domain.service.IPatientService;
+import com.digitalhouse.clinic.exception.ResourceAlreadyExistsException;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import com.digitalhouse.clinic.persistence.entity.Address;
 import com.digitalhouse.clinic.persistence.entity.Patient;
@@ -36,7 +37,8 @@ public class IPatientServiceImpl implements IPatientService {
     }
 
     @Override
-    public PatientDTO create(PatientDTO patient) {
+    public PatientDTO create(PatientDTO patient) throws ResourceAlreadyExistsException {
+        repository.findByDni(patient.getDni()).orElseThrow(() -> new ResourceAlreadyExistsException("A user with this dni already exists"));
         return mapper.toDTO(
                 repository.save(
                         mapper.toEntity(patient)
