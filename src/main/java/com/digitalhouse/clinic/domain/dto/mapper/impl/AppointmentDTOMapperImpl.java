@@ -4,6 +4,7 @@ import com.digitalhouse.clinic.domain.dto.AppointmentDTO;
 import com.digitalhouse.clinic.domain.dto.DentistDTO;
 import com.digitalhouse.clinic.domain.dto.PatientDTO;
 import com.digitalhouse.clinic.domain.dto.mapper.AppointmentDTOMapper;
+import com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl;
 import com.digitalhouse.clinic.persistence.entity.Appointment;
 import com.digitalhouse.clinic.persistence.entity.Dentist;
 import com.digitalhouse.clinic.persistence.entity.Patient;
