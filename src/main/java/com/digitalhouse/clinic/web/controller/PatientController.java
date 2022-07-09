@@ -48,7 +48,7 @@ public class PatientController {
             @ApiResponse(code = 200, message = "OK"),
             @ApiResponse(code = 404, message = "patient not found")
     })
-    public ResponseEntity<PatientDTO> getByDni(String dni) throws ResourceNotFoundException {
+    public ResponseEntity<PatientDTO> getByDni(@ApiParam(value = "The dni of the patient", required = true, example = "42930040") @PathVariable("dni")String dni) throws ResourceNotFoundException {
         return new ResponseEntity<>(service.getByDni(dni), HttpStatus.OK);
     }
 

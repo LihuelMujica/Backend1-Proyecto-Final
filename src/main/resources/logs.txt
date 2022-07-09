@@ -8,3 +8,58 @@ INFO    2022-07-08 21:48:17,402 [http-nio-8080-exec-1] com.digitalhouse.clinic.d
 INFO    2022-07-08 21:48:29,018 [http-nio-8080-exec-3] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
 INFO    2022-07-08 21:48:29,019 [http-nio-8080-exec-3] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Estefania, lastName=Celi, dni=1234, joinDate=2022-07-08T18:59:00.841, address=Address(id=null, street=España, number=4650, locality=Santa Fe, province=Santa Fe))
 INFO    2022-07-08 21:48:29,035 [http-nio-8080-exec-3] com.digitalhouse.clinic.exception.GlobalExceptionHandler  - com.digitalhouse.clinic.exception.ResourceAlreadyExistsException: A user with this dni already exists
+INFO    2022-07-08 22:27:40,918 [http-nio-8080-exec-3] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting all patients (service-getall)
+INFO    2022-07-08 22:27:43,404 [http-nio-8080-exec-4] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 22:27:43,414 [http-nio-8080-exec-4] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Estefania, lastName=Celi, dni=1234, joinDate=2022-07-08T18:59:00.841, address=Address(id=null, street=España, number=4650, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 22:27:44,115 [http-nio-8080-exec-5] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 22:27:44,115 [http-nio-8080-exec-5] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Estefania, lastName=Celi, dni=1234, joinDate=2022-07-08T18:59:00.841, address=Address(id=null, street=España, number=4650, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 22:27:44,125 [http-nio-8080-exec-5] com.digitalhouse.clinic.exception.GlobalExceptionHandler  - com.digitalhouse.clinic.exception.ResourceAlreadyExistsException: A user with this dni already exists
+INFO    2022-07-08 22:27:46,364 [http-nio-8080-exec-7] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting all patients (service-getall)
+INFO    2022-07-08 22:27:49,243 [http-nio-8080-exec-8] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 22:27:49,244 [http-nio-8080-exec-8] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Rodriguez, lastname=Horacio, license=123)
+INFO    2022-07-08 22:27:52,046 [http-nio-8080-exec-9] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 22:27:52,046 [http-nio-8080-exec-9] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=1, dentistId=1, patient=null, dentist=null, date=2022-07-08T20:09:52.684)
+INFO    2022-07-08 22:28:15,364 [http-nio-8080-exec-4] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting all appointments (service-getall)
+INFO    2022-07-08 22:35:30,374 [http-nio-8080-exec-6] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting all patients (service-getall)
+INFO    2022-07-08 22:35:35,214 [http-nio-8080-exec-7] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a poatient (service-getByDni)
+INFO    2022-07-08 22:35:35,214 [http-nio-8080-exec-7] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  dni= null
+INFO    2022-07-08 22:35:35,219 [http-nio-8080-exec-7] com.digitalhouse.clinic.exception.GlobalExceptionHandler  - com.digitalhouse.clinic.exception.ResourceNotFoundException: Patient not found
+INFO    2022-07-08 22:35:38,753 [http-nio-8080-exec-1] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a poatient (service-getByDni)
+INFO    2022-07-08 22:35:38,753 [http-nio-8080-exec-1] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  dni= null
+INFO    2022-07-08 22:35:38,754 [http-nio-8080-exec-1] com.digitalhouse.clinic.exception.GlobalExceptionHandler  - com.digitalhouse.clinic.exception.ResourceNotFoundException: Patient not found
+INFO    2022-07-08 22:35:58,089 [http-nio-8080-exec-9] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a poatient (service-getByDni)
+INFO    2022-07-08 22:35:58,089 [http-nio-8080-exec-9] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  dni= null
+INFO    2022-07-08 22:35:58,091 [http-nio-8080-exec-9] com.digitalhouse.clinic.exception.GlobalExceptionHandler  - com.digitalhouse.clinic.exception.ResourceNotFoundException: Patient not found
+INFO    2022-07-08 22:36:11,648 [http-nio-8080-exec-8] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a poatient (service-getByDni)
+INFO    2022-07-08 22:36:11,648 [http-nio-8080-exec-8] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  dni= null
+INFO    2022-07-08 22:36:11,649 [http-nio-8080-exec-8] com.digitalhouse.clinic.exception.GlobalExceptionHandler  - com.digitalhouse.clinic.exception.ResourceNotFoundException: Patient not found
+INFO    2022-07-08 22:36:31,465 [http-nio-8080-exec-10] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a poatient (service-getByDni)
+INFO    2022-07-08 22:36:31,466 [http-nio-8080-exec-10] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  dni= null
+INFO    2022-07-08 22:36:31,466 [http-nio-8080-exec-10] com.digitalhouse.clinic.exception.GlobalExceptionHandler  - com.digitalhouse.clinic.exception.ResourceNotFoundException: Patient not found
+INFO    2022-07-08 22:38:05,195 [http-nio-8080-exec-3] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a poatient (service-getByDni)
+INFO    2022-07-08 22:38:05,195 [http-nio-8080-exec-3] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  dni= null
+INFO    2022-07-08 22:38:05,196 [http-nio-8080-exec-3] com.digitalhouse.clinic.exception.GlobalExceptionHandler  - com.digitalhouse.clinic.exception.ResourceNotFoundException: Patient not found
+INFO    2022-07-08 22:38:10,254 [http-nio-8080-exec-5] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting all patients (service-getall)
+INFO    2022-07-08 22:40:33,445 [http-nio-8080-exec-1] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 22:40:33,447 [http-nio-8080-exec-1] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=1
+INFO    2022-07-08 22:40:33,464 [http-nio-8080-exec-1] com.digitalhouse.clinic.exception.GlobalExceptionHandler  - com.digitalhouse.clinic.exception.ResourceNotFoundException: Patient not found
+INFO    2022-07-08 22:40:37,379 [http-nio-8080-exec-3] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 22:40:37,387 [http-nio-8080-exec-3] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Estefania, lastName=Celi, dni=1234, joinDate=2022-07-08T18:59:00.841, address=Address(id=null, street=España, number=4650, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 22:40:41,124 [http-nio-8080-exec-4] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a poatient (service-getByDni)
+INFO    2022-07-08 22:40:41,125 [http-nio-8080-exec-4] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  dni= 1234
+INFO    2022-07-08 22:41:49,697 [http-nio-8080-exec-7] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 22:41:49,697 [http-nio-8080-exec-7] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 1
+INFO    2022-07-08 22:41:54,064 [http-nio-8080-exec-8] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 22:41:54,064 [http-nio-8080-exec-8] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=1, name=Roberto, lastName=null, dni=null, joinDate=null, address=Address(id=null, street=Suiza, number=null, locality=null, province=null))
+INFO    2022-07-08 22:41:54,065 [http-nio-8080-exec-8] com.digitalhouse.clinic.exception.GlobalExceptionHandler  - com.digitalhouse.clinic.exception.ResourceNotFoundException: Patient not found
+INFO    2022-07-08 22:41:59,550 [http-nio-8080-exec-9] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 22:41:59,551 [http-nio-8080-exec-9] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Rodriguez, lastname=Horacio, license=123)
+INFO    2022-07-08 22:42:03,857 [http-nio-8080-exec-10] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting all dentists (service-getall)
+INFO    2022-07-08 22:42:07,745 [http-nio-8080-exec-2] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 22:42:07,745 [http-nio-8080-exec-2] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 22:42:11,253 [http-nio-8080-exec-1] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 22:42:11,253 [http-nio-8080-exec-1] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=1, name=Roberto, lastname=null, license=null)
+INFO    2022-07-08 22:42:14,243 [http-nio-8080-exec-3] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 22:42:14,244 [http-nio-8080-exec-3] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=1, dentistId=1, patient=null, dentist=null, date=2022-07-08T20:09:52.684)
+INFO    2022-07-08 22:42:16,788 [http-nio-8080-exec-5] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 22:42:16,788 [http-nio-8080-exec-5] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Estefania, lastName=Celi, dni=1234, joinDate=2022-07-08T18:59:00.841, address=Address(id=null, street=España, number=4650, locality=Santa Fe, province=Santa Fe))
