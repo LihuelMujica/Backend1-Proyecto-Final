@@ -23,4 +23,10 @@ public class GlobalExceptionHandler {
         LOGGER.info(ex);
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
     }
+
+    @ExceptionHandler({BadRequestException.class})
+    public ResponseEntity<String> badRequestHandler(ResourceAlreadyExistsException ex) {
+        LOGGER.info(ex);
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
+    }
 }

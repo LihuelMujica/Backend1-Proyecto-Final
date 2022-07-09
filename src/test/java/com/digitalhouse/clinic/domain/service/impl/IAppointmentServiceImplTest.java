@@ -6,6 +6,7 @@ import com.digitalhouse.clinic.domain.dto.PatientDTO;
 import com.digitalhouse.clinic.domain.service.IAppointmentService;
 import com.digitalhouse.clinic.domain.service.IDentistService;
 import com.digitalhouse.clinic.domain.service.IPatientService;
+import com.digitalhouse.clinic.exception.BadRequestException;
 import com.digitalhouse.clinic.exception.ResourceAlreadyExistsException;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import com.digitalhouse.clinic.persistence.entity.Address;
@@ -38,7 +39,7 @@ class IAppointmentServiceImplTest {
 
     @ParameterizedTest
     @MethodSource("provideParameters")
-    void crudTest(PatientDTO patientDTO,DentistDTO dentistDTO) throws ResourceNotFoundException, ResourceAlreadyExistsException {
+    void crudTest(PatientDTO patientDTO,DentistDTO dentistDTO) throws ResourceNotFoundException, ResourceAlreadyExistsException, BadRequestException {
         //Save patient and dentist
         patientDTO = patientService.create(patientDTO);
         dentistDTO = dentistService.create(dentistDTO);

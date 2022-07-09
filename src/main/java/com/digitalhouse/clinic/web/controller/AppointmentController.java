@@ -3,6 +3,7 @@ package com.digitalhouse.clinic.web.controller;
 import com.digitalhouse.clinic.domain.dto.AppointmentDTO;
 import com.digitalhouse.clinic.domain.dto.PatientDTO;
 import com.digitalhouse.clinic.domain.service.IAppointmentService;
+import com.digitalhouse.clinic.exception.BadRequestException;
 import com.digitalhouse.clinic.exception.ResourceAlreadyExistsException;
 import com.digitalhouse.clinic.exception.ResourceNotFoundException;
 import io.swagger.annotations.ApiOperation;
@@ -46,7 +47,7 @@ public class AppointmentController {
     @PostMapping("/create")
     @ApiOperation("Save an appointment on the database")
     @ApiResponse(code = 201, message = "CREATED")
-    public ResponseEntity<AppointmentDTO> save(@RequestBody AppointmentDTO appointment) throws ResourceAlreadyExistsException {
+    public ResponseEntity<AppointmentDTO> save(@RequestBody AppointmentDTO appointment) throws ResourceAlreadyExistsException, BadRequestException {
         return new ResponseEntity<>(service.create(appointment), HttpStatus.CREATED);
     }
 
@@ -56,7 +57,7 @@ public class AppointmentController {
             @ApiResponse(code = 200, message = "OK"),
             @ApiResponse(code = 404, message = "appointment not found")
     })
-    public ResponseEntity<AppointmentDTO> update(@RequestBody AppointmentDTO appointmentDTO) throws ResourceNotFoundException {
+    public ResponseEntity<AppointmentDTO> update(@RequestBody AppointmentDTO appointmentDTO) throws ResourceNotFoundException, BadRequestException {
         return new ResponseEntity<>(service.update(appointmentDTO),HttpStatus.OK);
     }
 
