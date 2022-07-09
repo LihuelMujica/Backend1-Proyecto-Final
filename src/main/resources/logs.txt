@@ -1,0 +1,5 @@
+INFO    2022-07-08 21:41:27,714 [http-nio-8080-exec-2] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 21:41:27,723 [http-nio-8080-exec-2] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Estefania, lastName=Celi, dni=1234, joinDate=2022-07-08T18:59:00.841, address=Address(id=null, street=España, number=4650, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 21:41:46,244 [http-nio-8080-exec-3] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 21:41:46,244 [http-nio-8080-exec-3] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Estefania, lastName=Celi, dni=1234, joinDate=2022-07-08T18:59:00.841, address=Address(id=null, street=España, number=4650, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 21:41:46,261 [http-nio-8080-exec-3] com.digitalhouse.clinic.exception.GlobalExceptionHandler  - com.digitalhouse.clinic.exception.ResourceAlreadyExistsException: A user with this dni already exists
