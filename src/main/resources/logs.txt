@@ -109,3 +109,483 @@ INFO    2022-07-08 23:14:11,488 [http-nio-8080-exec-4] com.digitalhouse.clinic.d
 INFO    2022-07-08 23:14:11,489 [http-nio-8080-exec-4] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=1, dentistId=1, patient=null, dentist=null, date=2022-07-08T20:09:52.684)
 INFO    2022-07-08 23:14:17,277 [http-nio-8080-exec-5] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
 INFO    2022-07-08 23:14:17,278 [http-nio-8080-exec-5] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=2, dentistId=1, patient=null, dentist=null, date=2022-07-08T20:09:52.684)
+INFO    2022-07-08 23:17:50,413 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:17:50,415 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:17:50,609 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:17:50,611 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 23:17:50,638 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:17:50,638 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=1, name=Pepe, lastname=Fernandez, license=123)
+INFO    2022-07-08 23:17:50,658 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:17:50,659 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 23:17:50,662 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:17:50,663 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=-1, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:17:50,664 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Deleting a dentist (service-delete)
+INFO    2022-07-08 23:17:50,664 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  id= 1
+INFO    2022-07-08 23:17:50,678 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:17:50,678 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 23:17:50,693 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:17:50,693 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Francisco, lastname=Marsicano, license=456)
+INFO    2022-07-08 23:17:50,698 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:17:50,698 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=2
+INFO    2022-07-08 23:17:50,700 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:17:50,700 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=2, name=Francisco, lastname=Fernandez, license=456)
+INFO    2022-07-08 23:17:50,705 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:17:50,705 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=2
+INFO    2022-07-08 23:17:50,707 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:17:50,707 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=-1, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:17:50,709 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Deleting a dentist (service-delete)
+INFO    2022-07-08 23:17:50,709 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  id= 2
+INFO    2022-07-08 23:17:50,715 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:17:50,715 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=2
+INFO    2022-07-08 23:17:50,724 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:17:50,724 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Horacio, lastname=Rodriguez, license=789)
+INFO    2022-07-08 23:17:50,727 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:17:50,728 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=3
+INFO    2022-07-08 23:17:50,730 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:17:50,730 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=3, name=Horacio, lastname=Fernandez, license=789)
+INFO    2022-07-08 23:17:50,735 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:17:50,736 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=3
+INFO    2022-07-08 23:17:50,737 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:17:50,737 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=-1, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:17:50,739 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Deleting a dentist (service-delete)
+INFO    2022-07-08 23:17:50,740 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  id= 3
+INFO    2022-07-08 23:17:50,744 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:17:50,744 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=3
+INFO    2022-07-08 23:17:50,975 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:17:50,976 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Jimenez, dni=4236, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:17:50,991 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:17:50,991 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=7
+INFO    2022-07-08 23:17:50,995 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:17:50,995 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=7, name=Jorge, lastName=Fernandez, dni=4236, joinDate=2020-04-04T01:20:05, address=Address(id=7, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:17:51,005 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:17:51,005 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=7
+INFO    2022-07-08 23:17:51,010 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:17:51,011 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=-1, name=Jorge, lastName=Jimenez, dni=4236, joinDate=2020-04-04T01:20:05, address=Address(id=7, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:17:51,012 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 23:17:51,013 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 7
+INFO    2022-07-08 23:17:51,019 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:17:51,019 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=7
+INFO    2022-07-08 23:17:51,028 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:17:51,029 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Roberto, lastName=Gomez, dni=7863, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:17:51,036 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:17:51,036 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=8
+INFO    2022-07-08 23:17:51,038 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:17:51,039 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=8, name=Roberto, lastName=Fernandez, dni=7863, joinDate=2020-04-04T01:20:05, address=Address(id=8, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:17:51,048 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:17:51,048 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=8
+INFO    2022-07-08 23:17:51,051 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:17:51,051 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=-1, name=Roberto, lastName=Gomez, dni=7863, joinDate=2020-04-04T01:20:05, address=Address(id=8, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:17:51,052 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 23:17:51,052 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 8
+INFO    2022-07-08 23:17:51,058 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:17:51,058 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=8
+INFO    2022-07-08 23:17:51,067 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:17:51,067 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Suarez, dni=378634, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:17:51,072 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:17:51,072 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=9
+INFO    2022-07-08 23:17:51,075 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:17:51,075 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=9, name=Jorge, lastName=Fernandez, dni=378634, joinDate=2020-04-04T01:20:05, address=Address(id=9, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:17:51,082 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:17:51,082 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=9
+INFO    2022-07-08 23:17:51,084 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:17:51,084 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=-1, name=Jorge, lastName=Suarez, dni=378634, joinDate=2020-04-04T01:20:05, address=Address(id=9, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:17:51,086 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 23:17:51,086 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 9
+INFO    2022-07-08 23:17:51,093 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:17:51,093 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=9
+INFO    2022-07-08 23:17:51,118 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:17:51,118 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Jimenez, dni=963, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:17:51,124 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:17:51,124 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Pepe, lastname=Jimenez, license=8946531)
+INFO    2022-07-08 23:17:51,128 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 23:17:51,128 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=10, dentistId=10, patient=PatientDTO(id=10, name=Jorge, lastName=Jimenez, dni=963, joinDate=2020-04-04T01:20:05, address=Address(id=10, street=Calle1, number=123, locality=Paraná, province=Entre Ríos)), dentist=DentistDTO(id=10, name=Pepe, lastname=Jimenez, license=8946531), date=2030-09-06T10:05)
+INFO    2022-07-08 23:17:51,163 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:17:51,163 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=4
+INFO    2022-07-08 23:17:51,167 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:17:51,167 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=4, patientId=10, dentistId=10, patient=PatientDTO(id=10, name=Jorge, lastName=Jimenez, dni=963, joinDate=2020-04-04T01:20:05, address=Address(id=10, street=Calle1, number=123, locality=Paraná, province=Entre Ríos)), dentist=DentistDTO(id=10, name=Pepe, lastname=Jimenez, license=8946531), date=2030-04-20T09:15)
+INFO    2022-07-08 23:17:51,194 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:17:51,194 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Roberto, lastName=Gomez, dni=5374123, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:17:51,199 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:17:51,199 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Francisco, lastname=Marsicano, license=98465163)
+INFO    2022-07-08 23:17:51,204 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 23:17:51,204 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=11, dentistId=11, patient=PatientDTO(id=11, name=Roberto, lastName=Gomez, dni=5374123, joinDate=2020-04-04T01:20:05, address=Address(id=11, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe)), dentist=DentistDTO(id=11, name=Francisco, lastname=Marsicano, license=98465163), date=2030-09-06T10:05)
+INFO    2022-07-08 23:17:51,212 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:17:51,212 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=5
+INFO    2022-07-08 23:17:51,216 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:17:51,216 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=5, patientId=11, dentistId=11, patient=PatientDTO(id=11, name=Roberto, lastName=Gomez, dni=5374123, joinDate=2020-04-04T01:20:05, address=Address(id=11, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe)), dentist=DentistDTO(id=11, name=Francisco, lastname=Marsicano, license=98465163), date=2030-04-20T09:15)
+INFO    2022-07-08 23:17:51,229 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:17:51,229 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Suarez, dni=783453453, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:17:51,234 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:17:51,234 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Horacio, lastname=Rodriguez, license=320651965)
+INFO    2022-07-08 23:17:51,238 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 23:17:51,238 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=12, dentistId=12, patient=PatientDTO(id=12, name=Jorge, lastName=Suarez, dni=783453453, joinDate=2020-04-04T01:20:05, address=Address(id=12, street=Calle4, number=789, locality=Santa Fe, province=Rosario)), dentist=DentistDTO(id=12, name=Horacio, lastname=Rodriguez, license=320651965), date=2030-09-06T10:05)
+INFO    2022-07-08 23:17:51,246 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:17:51,247 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=6
+INFO    2022-07-08 23:17:51,251 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:17:51,252 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=6, patientId=12, dentistId=12, patient=PatientDTO(id=12, name=Jorge, lastName=Suarez, dni=783453453, joinDate=2020-04-04T01:20:05, address=Address(id=12, street=Calle4, number=789, locality=Santa Fe, province=Rosario)), dentist=DentistDTO(id=12, name=Horacio, lastname=Rodriguez, license=320651965), date=2030-04-20T09:15)
+INFO    2022-07-08 23:22:55,058 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:22:55,059 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:22:55,271 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:22:55,273 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 23:22:55,294 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:22:55,294 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=1, name=Pepe, lastname=Fernandez, license=123)
+INFO    2022-07-08 23:22:55,312 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:22:55,312 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 23:22:55,315 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:22:55,315 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=-1, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:22:55,316 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Deleting a dentist (service-delete)
+INFO    2022-07-08 23:22:55,317 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  id= 1
+INFO    2022-07-08 23:22:55,325 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:22:55,326 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 23:22:55,339 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:22:55,340 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Francisco, lastname=Marsicano, license=456)
+INFO    2022-07-08 23:22:55,346 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:22:55,346 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=2
+INFO    2022-07-08 23:22:55,348 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:22:55,349 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=2, name=Francisco, lastname=Fernandez, license=456)
+INFO    2022-07-08 23:22:55,353 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:22:55,353 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=2
+INFO    2022-07-08 23:22:55,355 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:22:55,355 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=-1, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:22:55,356 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Deleting a dentist (service-delete)
+INFO    2022-07-08 23:22:55,356 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  id= 2
+INFO    2022-07-08 23:22:55,360 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:22:55,360 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=2
+INFO    2022-07-08 23:22:55,368 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:22:55,368 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Horacio, lastname=Rodriguez, license=789)
+INFO    2022-07-08 23:22:55,371 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:22:55,371 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=3
+INFO    2022-07-08 23:22:55,375 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:22:55,375 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=3, name=Horacio, lastname=Fernandez, license=789)
+INFO    2022-07-08 23:22:55,379 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:22:55,379 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=3
+INFO    2022-07-08 23:22:55,381 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:22:55,381 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=-1, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:22:55,384 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Deleting a dentist (service-delete)
+INFO    2022-07-08 23:22:55,384 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  id= 3
+INFO    2022-07-08 23:22:55,386 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:22:55,386 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=3
+INFO    2022-07-08 23:22:55,621 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:22:55,622 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Jimenez, dni=4236, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:22:55,638 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:22:55,638 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=7
+INFO    2022-07-08 23:22:55,642 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:22:55,642 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=7, name=Jorge, lastName=Fernandez, dni=4236, joinDate=2020-04-04T01:20:05, address=Address(id=7, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:22:55,650 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:22:55,650 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=7
+INFO    2022-07-08 23:22:55,655 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:22:55,655 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=-1, name=Jorge, lastName=Jimenez, dni=4236, joinDate=2020-04-04T01:20:05, address=Address(id=7, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:22:55,657 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 23:22:55,657 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 7
+INFO    2022-07-08 23:22:55,663 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:22:55,664 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=7
+INFO    2022-07-08 23:22:55,672 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:22:55,673 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Roberto, lastName=Gomez, dni=7863, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:22:55,678 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:22:55,678 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=8
+INFO    2022-07-08 23:22:55,683 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:22:55,683 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=8, name=Roberto, lastName=Fernandez, dni=7863, joinDate=2020-04-04T01:20:05, address=Address(id=8, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:22:55,694 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:22:55,694 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=8
+INFO    2022-07-08 23:22:55,697 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:22:55,697 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=-1, name=Roberto, lastName=Gomez, dni=7863, joinDate=2020-04-04T01:20:05, address=Address(id=8, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:22:55,699 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 23:22:55,699 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 8
+INFO    2022-07-08 23:22:55,704 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:22:55,704 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=8
+INFO    2022-07-08 23:22:55,711 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:22:55,711 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Suarez, dni=378634, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:22:55,716 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:22:55,716 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=9
+INFO    2022-07-08 23:22:55,719 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:22:55,719 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=9, name=Jorge, lastName=Fernandez, dni=378634, joinDate=2020-04-04T01:20:05, address=Address(id=9, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:22:55,725 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:22:55,725 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=9
+INFO    2022-07-08 23:22:55,727 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:22:55,727 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=-1, name=Jorge, lastName=Suarez, dni=378634, joinDate=2020-04-04T01:20:05, address=Address(id=9, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:22:55,728 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 23:22:55,728 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 9
+INFO    2022-07-08 23:22:55,733 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:22:55,734 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=9
+INFO    2022-07-08 23:22:55,769 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:22:55,769 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Jimenez, dni=963, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:22:55,775 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:22:55,775 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Pepe, lastname=Jimenez, license=8946531)
+INFO    2022-07-08 23:22:55,778 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 23:22:55,779 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=10, dentistId=10, patient=PatientDTO(id=10, name=Jorge, lastName=Jimenez, dni=963, joinDate=2020-04-04T01:20:05, address=Address(id=10, street=Calle1, number=123, locality=Paraná, province=Entre Ríos)), dentist=DentistDTO(id=10, name=Pepe, lastname=Jimenez, license=8946531), date=2030-09-06T10:05)
+INFO    2022-07-08 23:22:55,815 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:22:55,815 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=4
+INFO    2022-07-08 23:22:55,818 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:22:55,818 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=4, patientId=10, dentistId=10, patient=PatientDTO(id=10, name=Jorge, lastName=Jimenez, dni=963, joinDate=2020-04-04T01:20:05, address=Address(id=10, street=Calle1, number=123, locality=Paraná, province=Entre Ríos)), dentist=DentistDTO(id=10, name=Pepe, lastname=Jimenez, license=8946531), date=2030-04-20T09:15)
+INFO    2022-07-08 23:22:55,838 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:22:55,838 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Roberto, lastName=Gomez, dni=5374123, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:22:55,844 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:22:55,844 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Francisco, lastname=Marsicano, license=98465163)
+INFO    2022-07-08 23:22:55,848 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 23:22:55,849 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=11, dentistId=11, patient=PatientDTO(id=11, name=Roberto, lastName=Gomez, dni=5374123, joinDate=2020-04-04T01:20:05, address=Address(id=11, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe)), dentist=DentistDTO(id=11, name=Francisco, lastname=Marsicano, license=98465163), date=2030-09-06T10:05)
+INFO    2022-07-08 23:22:55,857 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:22:55,857 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=5
+INFO    2022-07-08 23:22:55,860 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:22:55,860 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=5, patientId=11, dentistId=11, patient=PatientDTO(id=11, name=Roberto, lastName=Gomez, dni=5374123, joinDate=2020-04-04T01:20:05, address=Address(id=11, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe)), dentist=DentistDTO(id=11, name=Francisco, lastname=Marsicano, license=98465163), date=2030-04-20T09:15)
+INFO    2022-07-08 23:22:55,876 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:22:55,876 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Suarez, dni=783453453, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:22:55,880 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:22:55,881 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Horacio, lastname=Rodriguez, license=320651965)
+INFO    2022-07-08 23:22:55,884 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 23:22:55,884 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=12, dentistId=12, patient=PatientDTO(id=12, name=Jorge, lastName=Suarez, dni=783453453, joinDate=2020-04-04T01:20:05, address=Address(id=12, street=Calle4, number=789, locality=Santa Fe, province=Rosario)), dentist=DentistDTO(id=12, name=Horacio, lastname=Rodriguez, license=320651965), date=2030-09-06T10:05)
+INFO    2022-07-08 23:22:55,889 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:22:55,889 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=6
+INFO    2022-07-08 23:22:55,893 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:22:55,893 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=6, patientId=12, dentistId=12, patient=PatientDTO(id=12, name=Jorge, lastName=Suarez, dni=783453453, joinDate=2020-04-04T01:20:05, address=Address(id=12, street=Calle4, number=789, locality=Santa Fe, province=Rosario)), dentist=DentistDTO(id=12, name=Horacio, lastname=Rodriguez, license=320651965), date=2030-04-20T09:15)
+INFO    2022-07-08 23:25:00,206 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:25:00,207 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:25:00,403 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:00,405 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 23:25:00,426 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:25:00,426 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=1, name=Pepe, lastname=Fernandez, license=123)
+INFO    2022-07-08 23:25:00,442 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:00,442 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 23:25:00,446 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:25:00,446 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=-1, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:25:00,448 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Deleting a dentist (service-delete)
+INFO    2022-07-08 23:25:00,448 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  id= 1
+INFO    2022-07-08 23:25:00,457 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:00,457 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 23:25:00,470 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:25:00,470 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Francisco, lastname=Marsicano, license=456)
+INFO    2022-07-08 23:25:00,474 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:00,474 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=2
+INFO    2022-07-08 23:25:00,476 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:25:00,476 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=2, name=Francisco, lastname=Fernandez, license=456)
+INFO    2022-07-08 23:25:00,480 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:00,480 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=2
+INFO    2022-07-08 23:25:00,482 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:25:00,483 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=-1, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:25:00,484 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Deleting a dentist (service-delete)
+INFO    2022-07-08 23:25:00,484 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  id= 2
+INFO    2022-07-08 23:25:00,487 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:00,487 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=2
+INFO    2022-07-08 23:25:00,496 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:25:00,496 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Horacio, lastname=Rodriguez, license=789)
+INFO    2022-07-08 23:25:00,499 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:00,499 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=3
+INFO    2022-07-08 23:25:00,501 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:25:00,501 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=3, name=Horacio, lastname=Fernandez, license=789)
+INFO    2022-07-08 23:25:00,505 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:00,506 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=3
+INFO    2022-07-08 23:25:00,507 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:25:00,507 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=-1, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:25:00,508 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Deleting a dentist (service-delete)
+INFO    2022-07-08 23:25:00,508 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  id= 3
+INFO    2022-07-08 23:25:00,511 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:00,511 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=3
+INFO    2022-07-08 23:25:00,719 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:25:00,719 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Jimenez, dni=4236, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:25:00,728 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:00,729 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=7
+INFO    2022-07-08 23:25:00,731 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:25:00,732 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=7, name=Jorge, lastName=Fernandez, dni=4236, joinDate=2020-04-04T01:20:05, address=Address(id=7, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:25:00,738 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:00,738 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=7
+INFO    2022-07-08 23:25:00,742 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:25:00,743 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=-1, name=Jorge, lastName=Jimenez, dni=4236, joinDate=2020-04-04T01:20:05, address=Address(id=7, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:25:00,744 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 23:25:00,744 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 7
+INFO    2022-07-08 23:25:00,749 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:00,749 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=7
+INFO    2022-07-08 23:25:00,756 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:25:00,756 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Roberto, lastName=Gomez, dni=7863, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:25:00,760 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:00,760 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=8
+INFO    2022-07-08 23:25:00,763 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:25:00,763 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=8, name=Roberto, lastName=Fernandez, dni=7863, joinDate=2020-04-04T01:20:05, address=Address(id=8, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:25:00,769 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:00,769 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=8
+INFO    2022-07-08 23:25:00,770 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:25:00,770 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=-1, name=Roberto, lastName=Gomez, dni=7863, joinDate=2020-04-04T01:20:05, address=Address(id=8, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:25:00,771 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 23:25:00,771 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 8
+INFO    2022-07-08 23:25:00,776 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:00,776 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=8
+INFO    2022-07-08 23:25:00,782 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:25:00,782 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Suarez, dni=378634, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:25:00,786 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:00,786 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=9
+INFO    2022-07-08 23:25:00,787 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:25:00,787 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=9, name=Jorge, lastName=Fernandez, dni=378634, joinDate=2020-04-04T01:20:05, address=Address(id=9, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:25:00,789 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:00,789 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=9
+INFO    2022-07-08 23:25:00,790 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:25:00,790 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=-1, name=Jorge, lastName=Suarez, dni=378634, joinDate=2020-04-04T01:20:05, address=Address(id=9, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:25:00,792 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 23:25:00,792 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 9
+INFO    2022-07-08 23:25:00,795 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:00,795 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=9
+INFO    2022-07-08 23:25:00,808 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:25:00,808 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Jimenez, dni=963, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:25:00,812 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:25:00,812 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Pepe, lastname=Jimenez, license=8946531)
+INFO    2022-07-08 23:25:00,815 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 23:25:00,815 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=10, dentistId=10, patient=PatientDTO(id=10, name=Jorge, lastName=Jimenez, dni=963, joinDate=2020-04-04T01:20:05, address=Address(id=10, street=Calle1, number=123, locality=Paraná, province=Entre Ríos)), dentist=DentistDTO(id=10, name=Pepe, lastname=Jimenez, license=8946531), date=2030-09-06T10:05)
+INFO    2022-07-08 23:25:00,842 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:25:00,842 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=4
+INFO    2022-07-08 23:25:00,845 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:25:00,845 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=4, patientId=10, dentistId=10, patient=PatientDTO(id=10, name=Jorge, lastName=Jimenez, dni=963, joinDate=2020-04-04T01:20:05, address=Address(id=10, street=Calle1, number=123, locality=Paraná, province=Entre Ríos)), dentist=DentistDTO(id=10, name=Pepe, lastname=Jimenez, license=8946531), date=2030-04-20T09:15)
+INFO    2022-07-08 23:25:00,864 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:25:00,864 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Roberto, lastName=Gomez, dni=5374123, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:25:00,869 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:25:00,869 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Francisco, lastname=Marsicano, license=98465163)
+INFO    2022-07-08 23:25:00,874 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 23:25:00,874 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=11, dentistId=11, patient=PatientDTO(id=11, name=Roberto, lastName=Gomez, dni=5374123, joinDate=2020-04-04T01:20:05, address=Address(id=11, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe)), dentist=DentistDTO(id=11, name=Francisco, lastname=Marsicano, license=98465163), date=2030-09-06T10:05)
+INFO    2022-07-08 23:25:00,880 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:25:00,880 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=5
+INFO    2022-07-08 23:25:00,886 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:25:00,886 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=5, patientId=11, dentistId=11, patient=PatientDTO(id=11, name=Roberto, lastName=Gomez, dni=5374123, joinDate=2020-04-04T01:20:05, address=Address(id=11, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe)), dentist=DentistDTO(id=11, name=Francisco, lastname=Marsicano, license=98465163), date=2030-04-20T09:15)
+INFO    2022-07-08 23:25:00,898 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:25:00,898 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Suarez, dni=783453453, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:25:00,905 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:25:00,905 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Horacio, lastname=Rodriguez, license=320651965)
+INFO    2022-07-08 23:25:00,907 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 23:25:00,907 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=12, dentistId=12, patient=PatientDTO(id=12, name=Jorge, lastName=Suarez, dni=783453453, joinDate=2020-04-04T01:20:05, address=Address(id=12, street=Calle4, number=789, locality=Santa Fe, province=Rosario)), dentist=DentistDTO(id=12, name=Horacio, lastname=Rodriguez, license=320651965), date=2030-09-06T10:05)
+INFO    2022-07-08 23:25:00,913 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:25:00,913 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=6
+INFO    2022-07-08 23:25:00,916 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:25:00,916 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=6, patientId=12, dentistId=12, patient=PatientDTO(id=12, name=Jorge, lastName=Suarez, dni=783453453, joinDate=2020-04-04T01:20:05, address=Address(id=12, street=Calle4, number=789, locality=Santa Fe, province=Rosario)), dentist=DentistDTO(id=12, name=Horacio, lastname=Rodriguez, license=320651965), date=2030-04-20T09:15)
+INFO    2022-07-08 23:25:37,613 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:25:37,615 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:25:37,814 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:37,816 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 23:25:37,840 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:25:37,840 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=1, name=Pepe, lastname=Fernandez, license=123)
+INFO    2022-07-08 23:25:37,863 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:37,863 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 23:25:37,866 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:25:37,866 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=-1, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:25:37,868 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Deleting a dentist (service-delete)
+INFO    2022-07-08 23:25:37,868 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  id= 1
+INFO    2022-07-08 23:25:37,879 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:37,879 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=1
+INFO    2022-07-08 23:25:37,890 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:25:37,890 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Francisco, lastname=Marsicano, license=456)
+INFO    2022-07-08 23:25:37,895 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:37,895 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=2
+INFO    2022-07-08 23:25:37,896 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:25:37,897 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=2, name=Francisco, lastname=Fernandez, license=456)
+INFO    2022-07-08 23:25:37,900 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:37,900 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=2
+INFO    2022-07-08 23:25:37,902 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:25:37,902 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=-1, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:25:37,904 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Deleting a dentist (service-delete)
+INFO    2022-07-08 23:25:37,904 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  id= 2
+INFO    2022-07-08 23:25:37,908 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:37,908 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=2
+INFO    2022-07-08 23:25:37,917 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:25:37,917 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Horacio, lastname=Rodriguez, license=789)
+INFO    2022-07-08 23:25:37,919 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:37,920 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=3
+INFO    2022-07-08 23:25:37,922 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:25:37,923 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=3, name=Horacio, lastname=Fernandez, license=789)
+INFO    2022-07-08 23:25:37,928 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:37,928 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=3
+INFO    2022-07-08 23:25:37,929 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Updating a dentist (service-update)
+INFO    2022-07-08 23:25:37,930 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=-1, name=Pepe, lastname=Jimenez, license=123)
+INFO    2022-07-08 23:25:37,931 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Deleting a dentist (service-delete)
+INFO    2022-07-08 23:25:37,931 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  id= 3
+INFO    2022-07-08 23:25:37,935 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Getting a dentist (service-getById)
+INFO    2022-07-08 23:25:37,935 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Input: id=3
+INFO    2022-07-08 23:25:38,167 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:25:38,168 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Jimenez, dni=4236, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:25:38,180 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:38,181 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=7
+INFO    2022-07-08 23:25:38,184 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:25:38,184 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=7, name=Jorge, lastName=Fernandez, dni=4236, joinDate=2020-04-04T01:20:05, address=Address(id=7, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:25:38,191 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:38,191 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=7
+INFO    2022-07-08 23:25:38,196 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:25:38,196 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=-1, name=Jorge, lastName=Jimenez, dni=4236, joinDate=2020-04-04T01:20:05, address=Address(id=7, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:25:38,198 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 23:25:38,198 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 7
+INFO    2022-07-08 23:25:38,204 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:38,204 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=7
+INFO    2022-07-08 23:25:38,213 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:25:38,213 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Roberto, lastName=Gomez, dni=7863, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:25:38,218 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:38,218 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=8
+INFO    2022-07-08 23:25:38,220 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:25:38,220 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=8, name=Roberto, lastName=Fernandez, dni=7863, joinDate=2020-04-04T01:20:05, address=Address(id=8, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:25:38,227 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:38,227 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=8
+INFO    2022-07-08 23:25:38,229 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:25:38,229 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=-1, name=Roberto, lastName=Gomez, dni=7863, joinDate=2020-04-04T01:20:05, address=Address(id=8, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:25:38,230 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 23:25:38,230 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 8
+INFO    2022-07-08 23:25:38,235 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:38,236 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=8
+INFO    2022-07-08 23:25:38,245 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:25:38,245 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Suarez, dni=378634, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:25:38,249 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:38,249 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=9
+INFO    2022-07-08 23:25:38,250 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:25:38,250 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=9, name=Jorge, lastName=Fernandez, dni=378634, joinDate=2020-04-04T01:20:05, address=Address(id=9, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:25:38,256 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:38,256 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=9
+INFO    2022-07-08 23:25:38,258 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Updating a patiient (service-update)
+INFO    2022-07-08 23:25:38,258 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=-1, name=Jorge, lastName=Suarez, dni=378634, joinDate=2020-04-04T01:20:05, address=Address(id=9, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:25:38,259 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Deleting a patient (service-delete)
+INFO    2022-07-08 23:25:38,259 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  id= 9
+INFO    2022-07-08 23:25:38,263 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Getting a patient (service-getById)
+INFO    2022-07-08 23:25:38,263 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Input: id=9
+INFO    2022-07-08 23:25:38,284 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:25:38,284 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Jimenez, dni=963, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle1, number=123, locality=Paraná, province=Entre Ríos))
+INFO    2022-07-08 23:25:38,287 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:25:38,287 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Pepe, lastname=Jimenez, license=8946531)
+INFO    2022-07-08 23:25:38,290 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 23:25:38,291 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=10, dentistId=10, patient=PatientDTO(id=10, name=Jorge, lastName=Jimenez, dni=963, joinDate=2020-04-04T01:20:05, address=Address(id=10, street=Calle1, number=123, locality=Paraná, province=Entre Ríos)), dentist=DentistDTO(id=10, name=Pepe, lastname=Jimenez, license=8946531), date=2030-09-06T10:05)
+INFO    2022-07-08 23:25:38,321 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:25:38,321 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=4
+INFO    2022-07-08 23:25:38,326 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:25:38,326 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=4, patientId=10, dentistId=10, patient=PatientDTO(id=10, name=Jorge, lastName=Jimenez, dni=963, joinDate=2020-04-04T01:20:05, address=Address(id=10, street=Calle1, number=123, locality=Paraná, province=Entre Ríos)), dentist=DentistDTO(id=10, name=Pepe, lastname=Jimenez, license=8946531), date=2030-04-20T09:15)
+INFO    2022-07-08 23:25:38,332 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:25:38,332 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=4
+INFO    2022-07-08 23:25:38,335 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:25:38,335 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=-1, patientId=null, dentistId=null, patient=null, dentist=null, date=null)
+INFO    2022-07-08 23:25:38,336 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Deleting an appointment (service-delete)
+INFO    2022-07-08 23:25:38,336 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  id= 4
+INFO    2022-07-08 23:25:38,342 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:25:38,343 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=4
+INFO    2022-07-08 23:25:38,350 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:25:38,350 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Roberto, lastName=Gomez, dni=5374123, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe))
+INFO    2022-07-08 23:25:38,356 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:25:38,356 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Francisco, lastname=Marsicano, license=98465163)
+INFO    2022-07-08 23:25:38,358 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 23:25:38,358 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=11, dentistId=11, patient=PatientDTO(id=11, name=Roberto, lastName=Gomez, dni=5374123, joinDate=2020-04-04T01:20:05, address=Address(id=11, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe)), dentist=DentistDTO(id=11, name=Francisco, lastname=Marsicano, license=98465163), date=2030-09-06T10:05)
+INFO    2022-07-08 23:25:38,363 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:25:38,363 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=5
+INFO    2022-07-08 23:25:38,365 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:25:38,365 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=5, patientId=11, dentistId=11, patient=PatientDTO(id=11, name=Roberto, lastName=Gomez, dni=5374123, joinDate=2020-04-04T01:20:05, address=Address(id=11, street=Calle2, number=456, locality=Santa Fe, province=Santa Fe)), dentist=DentistDTO(id=11, name=Francisco, lastname=Marsicano, license=98465163), date=2030-04-20T09:15)
+INFO    2022-07-08 23:25:38,374 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:25:38,374 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=5
+INFO    2022-07-08 23:25:38,376 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:25:38,376 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=-1, patientId=null, dentistId=null, patient=null, dentist=null, date=null)
+INFO    2022-07-08 23:25:38,378 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Deleting an appointment (service-delete)
+INFO    2022-07-08 23:25:38,378 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  id= 5
+INFO    2022-07-08 23:25:38,381 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:25:38,381 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=5
+INFO    2022-07-08 23:25:38,389 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - Saving a patient (service-create)
+INFO    2022-07-08 23:25:38,389 [main] com.digitalhouse.clinic.domain.service.impl.IPatientServiceImpl  - input:  PatientDTO(id=null, name=Jorge, lastName=Suarez, dni=783453453, joinDate=2020-04-04T01:20:05, address=Address(id=null, street=Calle4, number=789, locality=Santa Fe, province=Rosario))
+INFO    2022-07-08 23:25:38,394 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - Saving a dentist (service-create)
+INFO    2022-07-08 23:25:38,394 [main] com.digitalhouse.clinic.domain.service.impl.IDentistServiceImpl  - input:  DentistDTO(id=null, name=Horacio, lastname=Rodriguez, license=320651965)
+INFO    2022-07-08 23:25:38,397 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Saving an appointment (service-create)
+INFO    2022-07-08 23:25:38,397 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=null, patientId=12, dentistId=12, patient=PatientDTO(id=12, name=Jorge, lastName=Suarez, dni=783453453, joinDate=2020-04-04T01:20:05, address=Address(id=12, street=Calle4, number=789, locality=Santa Fe, province=Rosario)), dentist=DentistDTO(id=12, name=Horacio, lastname=Rodriguez, license=320651965), date=2030-09-06T10:05)
+INFO    2022-07-08 23:25:38,405 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:25:38,406 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=6
+INFO    2022-07-08 23:25:38,410 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:25:38,411 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=6, patientId=12, dentistId=12, patient=PatientDTO(id=12, name=Jorge, lastName=Suarez, dni=783453453, joinDate=2020-04-04T01:20:05, address=Address(id=12, street=Calle4, number=789, locality=Santa Fe, province=Rosario)), dentist=DentistDTO(id=12, name=Horacio, lastname=Rodriguez, license=320651965), date=2030-04-20T09:15)
+INFO    2022-07-08 23:25:38,419 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:25:38,420 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=6
+INFO    2022-07-08 23:25:38,421 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Updating an appointment (service-update)
+INFO    2022-07-08 23:25:38,421 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  AppointmentDTO(id=-1, patientId=null, dentistId=null, patient=null, dentist=null, date=null)
+INFO    2022-07-08 23:25:38,421 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Deleting an appointment (service-delete)
+INFO    2022-07-08 23:25:38,421 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - input:  id= 6
+INFO    2022-07-08 23:25:38,424 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Getting an appointment (service-getById)
+INFO    2022-07-08 23:25:38,424 [main] com.digitalhouse.clinic.domain.service.impl.IAppointmentServiceImpl  - Input: id=6

@@ -63,6 +63,7 @@ class IAppointmentServiceImplTest {
 
         //Update
         appointmentDTO.setDate(LocalDateTime.of(2030,4,20,9,15));
+        System.out.println(appointmentDTO);
         service.update(appointmentDTO);
         assertEquals(appointmentDTO,service.getById(appointmentDTO.getId()));
         assertThrows(ResourceNotFoundException.class,

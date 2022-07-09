@@ -65,13 +65,13 @@ public class IAppointmentServiceImpl implements IAppointmentService {
     public AppointmentDTO update(AppointmentDTO appointment) throws ResourceNotFoundException, BadRequestException {
         LOGGER.info("Updating an appointment (service-update)");
         LOGGER.info("input:  "+ appointment);
-        if(dentistRepository.existsById(appointment.getDentistId()) && patientRepository.existsById(appointment.getPatientId()))
-            throw new BadRequestException("The patient or the dentist doesn't exists");
         Appointment oldAppointment = repository.findById(appointment.getId()).orElseThrow(() -> new ResourceNotFoundException("Appointment not found"));
         Appointment newAppointment = mapper.toEntity(appointment);
         if(newAppointment.getPatientId()==null) newAppointment.setPatientId(oldAppointment.getPatientId());
         if(newAppointment.getDentistId()==null) newAppointment.setDentistId(oldAppointment.getDentistId());
         if(newAppointment.getDate()==null) newAppointment.setDate(oldAppointment.getDate());
+        if(!dentistRepository.existsById(newAppointment.getDentistId()) && !patientRepository.existsById(newAppointment.getPatientId()))
+            throw new BadRequestException("The patient or the dentist doesn't exists");
         return mapper.toDTO(repository.save(newAppointment));
     }
 
